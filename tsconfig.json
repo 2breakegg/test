@@ -1,33 +1,11 @@
-// {
-//   "compilerOptions": {
-//     "outDir":"./built",
-//     "allowJs":true,
-//     "target": "es6",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */
-//     "lib": [
-//       "es2017",
-//       "dom"
-//     ],
-//     "types": [
-//       "node"
-//     ],
-//     "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
-//     // "strict": true,                           /* Enable all strict type-checking options. */
-//     "esModuleInterop": true                   /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
-//   },
-//   "include": [
-//     "./src/**/*"
-//   ]
-// }
 {
   "compilerOptions": {
-    "sourceMap":true,
-    "outDir": "./dist/",
-    "noImplicitAny": true,
-    // "module": "es6",
-    "module": "commonjs",
-    "target": "es5",
-    "jsx": "react",
     "allowJs": true,
-    // "esModuleInterop":true
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "outDir": "./dist/",
+    "rootDir": "./src/",
+    "sourceMap":true,
+    "target": "es5",
   }
 }

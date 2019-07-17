@@ -5,8 +5,7 @@ let dirTop='./src/mycode/'
 //      (什么样的入口文件?)TS文件
 //  (路径怎么起笔?) 相对于'./src/'(具体看dirTop变量)
 let dirArr=[ 
-    'a/',
-    'b/'
+    'start/',
 ];
 
 module.exports={
