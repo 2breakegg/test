@@ -4,8 +4,14 @@
     "module": "commonjs",
     "noImplicitAny": true,
     "outDir": "./dist/",
-    "rootDir": "./src/",
+    "rootDirs": [
+      "src/",
+    ],
     "sourceMap":true,
     "target": "es5",
-  }
+  },
+  // "exclude": [
+  //   "node_modules", 
+  //   "for_webpack"
+  // ]
 }

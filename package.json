@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "three": "live-server ../threejs-master0.106.2/ --port=8081"
   },
   "keywords": [],
   "author": "",

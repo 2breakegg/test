@@ -5,7 +5,10 @@
     ],
     "jsRules": {},
     "rules": {
-        "no-console":false
+        "no-console":true,
+        "ordered-imports":false,
+        "prefer-const":false,
+        "max-line-length":false
     },
     "rulesDirectory": []
 }
