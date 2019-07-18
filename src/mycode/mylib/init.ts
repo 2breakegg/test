@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import EventFunctions from "./animatefunctions";
+import EventFunctions from "./eventfunctions";
 
 // tslint:disable-next-line: prefer-const
 let scene = new THREE.Scene(); // 创建场景

@@ -1,13 +1,13 @@
 
 class EventFunctions {
     // public functions:Function[];
-    public functions: {[key: string]: Function};
+    public functions: {[key: string]: () => void};
     public counter: number;
     constructor() {
         this.counter = 0;
         this.functions = {};
     }
-    public add(fun: Function): string { // 添加需要执行的函数
+    public add(fun: () => void): string { // 添加需要执行的函数
         const key: string = fun.name + this.counter;
         this.functions[key] = fun;
         return key;
@@ -22,7 +22,7 @@ class EventFunctions {
 
     public runAll() {
         const keys: string[] = Object.keys(this.functions);
-        keys.map((key) => {this.run(key);});
+        keys.map((key) => {this.run(key); });
     }
     public run(key: string) {
         this.functions[key]();

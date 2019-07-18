@@ -8,7 +8,9 @@
         "no-console":true,
         "ordered-imports":false,
         "prefer-const":false,
-        "max-line-length":false
+        "max-line-length":false,
+        "no-shadowed-variable":false,
+        "align":false
     },
     "rulesDirectory": []
 }
