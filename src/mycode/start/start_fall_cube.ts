@@ -119,11 +119,3 @@ function aminate() {
 }
 
 animateFunctions.add(aminate);
-
-// tslint:disable-next-line: no-string-literal
-// window.actions = actions;
-
-// interface Window {
-//     actions: Action[];
-// }
-// window.actions=actions;
