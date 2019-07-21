@@ -12,7 +12,8 @@
         "no-shadowed-variable":false,
         "align":false,
         "noImplicitAny": false,
-        "interface-name": [true, "never-prefix"]
+        "interface-name": [true, "never-prefix"],
+        "one-variable-per-declaration":true
     },
     "rulesDirectory": []
 }
