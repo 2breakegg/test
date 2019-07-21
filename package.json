@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server",
-    "three": "live-server ../threejs-master0.106.2/ --port=8081"
+    "three": "live-server ../threejs-master0.106.2/ --port=8081",
+    "example": "live-server ./src --port=8082"
   },
   "keywords": [],
   "author": "",

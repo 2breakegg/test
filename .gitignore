@@ -1,3 +1,6 @@
 node_modules
 dist/mycode
 .vscode
+/src/examples/
+/src/files/
+/src/build/

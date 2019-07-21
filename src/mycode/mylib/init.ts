@@ -1,8 +1,8 @@
 import * as THREE from "three";
 import EventFunctions from "./eventfunctions";
 import Stats from "../jsm/libs/stats.module";
+import log from "./log";
 
-// tslint:disable-next-line: prefer-const
 let scene = new THREE.Scene(); // 创建场景
 let camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 2000); // 创建相机 (参数分别是   FOV:可视角度,  aspect ratio:宽高比,  near:近剪切面,  far:远剪切面)
 let renderer =  new THREE.WebGLRenderer(); // 创建渲染器
@@ -37,8 +37,17 @@ window.onresize = (): void => {
 
 export {
     THREE,
-    scene,
-    camera,
-    renderer,
-    animateFunctions,
+    scene, camera, renderer,
+    animateFunctions, log,
 };
+
+declare global {
+    interface Window {
+        scene: any;
+        camera: any;
+        renderer: any;
+    }
+}
+window.scene =  scene;
+window.camera =  camera;
+window.renderer =  renderer;

@@ -6,6 +6,7 @@ let dirTop='./src/mycode/'
 //  (路径怎么起笔?) 相对于'./src/'(具体看dirTop变量)
 let dirArr=[ 
     'start/',
+    'helpers/'
 ];
 
 module.exports={

@@ -11,7 +11,8 @@
         "max-line-length":false,
         "no-shadowed-variable":false,
         "align":false,
-        "noImplicitAny": false
+        "noImplicitAny": false,
+        "interface-name": [true, "never-prefix"]
     },
     "rulesDirectory": []
 }
