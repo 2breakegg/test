@@ -3,3 +3,9 @@ import * as THREE from "three";
 import {OrbitControls} from "../jsm/controls/OrbitControls";
 
 let control = new OrbitControls(camera, renderer.domElement);
+
+let light = new THREE.DirectionalLight( 0xFFFFFF );
+let helper = new THREE.DirectionalLightHelper( light, 5 );
+scene.add( helper );
+
+// todo 光还没看 这个以后再说

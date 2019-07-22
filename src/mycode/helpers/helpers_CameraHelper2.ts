@@ -6,7 +6,7 @@ import { PerspectiveCamera } from "three";
 let scene = new THREE.Scene(); // 创建场景
 let camera = new PerspectiveCamera(50, window.innerWidth / window.innerHeight / 2, 0.1, 2000); // 创建相机 (参数分别是   FOV:可视角度,  aspect ratio:宽高比,  near:近剪切面,  far:远剪切面)
 let renderer =  new THREE.WebGLRenderer(); // 创建渲染器
-renderer.autoClear = false;
+renderer.autoClear = false; // 取消自动清屏
 renderer.setSize(window.innerWidth, window.innerHeight); // 设置渲染器的宽高
 document.body.appendChild(renderer.domElement); // 将渲染器的dom添加进body中
 let control = new OrbitControls(camera, renderer.domElement);
@@ -34,7 +34,7 @@ let cube: THREE.Mesh;
     scene.add(cube);
 }
 
-
+// 设置相机的显示位置和尺寸
 camera.viewport = new THREE.Vector4( 0, 0, window.innerWidth / 2, window.innerHeight);
 camera2.viewport = new THREE.Vector4( window.innerWidth / 2, 0, window.innerWidth / 2, window.innerHeight);
 
